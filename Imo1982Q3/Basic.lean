@@ -5,27 +5,14 @@ import Mathlib.Algebra.GeomSum
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Tactic.Linarith
 import Mathlib.Data.Matrix.Basic
+
 open Real BigOperators Finset RealInnerProductSpace Matrix
 
-
-namespace Imo1982Q1
-
--- theorem main {f : ℕ → ℕ}{r : ℕ → ℕ → ℕ}
---   (hr : ∀ m n, r m n = 1 ∨ r m n = 0)
---   (hf : ∀ m n : ℕ, f (m + n) - f m - f n = r n m)
---   (hf₁ : f 1 = 0)
---   (hf₂ : f 2 = 0)
---   (hf₃ : f 3 > 0) :
---   ∀ n, f n = n / 3 := by
---   have : ∀ n : ℕ, n % 3 < 3 := by intro n; apply Nat.mod_lt _ (by decide)
---   have : ∀ n : ℕ, ∃ k, n = 3 * k ∨ n = 3 * k + 1 ∨ n = 3 * k + 2 := s
---   intro n
---   induction' n using Nat.strongRecOn with k hd
---   · sorry
-
-
-end Imo1982Q1
-
+/-
+The solution is based on the one at the
+[Art of Problem Solving](https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_3)
+website.
+-/
 
 namespace Imo1982Q3
 
